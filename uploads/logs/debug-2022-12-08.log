@@ -1,0 +1,16 @@
+[08-Dec-2022 00:41:05 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:41:05 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:41:05 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:41:05 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:41:33 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:41:33 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:41:33 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:41:33 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:43:41 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:43:41 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:43:41 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:43:41 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:44:27 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:44:27 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:44:27 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, null given in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
+[08-Dec-2022 00:44:27 UTC] PHP Warning:  implode(): Invalid arguments passed in /var/www/vhosts/harcomia.com/link.harcomia.com/app/core/Uploads.php on line 47
