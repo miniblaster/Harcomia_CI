@@ -51,51 +51,6 @@
                                 <?php endif ?>
                             <?php endif ?>
 
-                            <?php if(settings()->links->biolinks_is_enabled): ?>
-                                <a class="dropdown-item" href="<?= url('links?type=biolink') ?>"><i class="fa fa-fw fa-sm fa-hashtag mr-2"></i> <?= l('links.menu.biolinks') ?></a>
-                            <?php endif ?>
-
-                            <?php if(settings()->links->shortener_is_enabled): ?>
-                                <a class="dropdown-item" href="<?= url('links?type=link') ?>"><i class="fa fa-fw fa-sm fa-link mr-2"></i> <?= l('links.menu.links') ?></a>
-                            <?php endif ?>
-
-                            <?php if(settings()->links->files_is_enabled): ?>
-                                <a class="dropdown-item" href="<?= url('links?type=file') ?>"><i class="fa fa-fw fa-sm fa-file mr-2"></i> <?= l('links.menu.files') ?></a>
-                            <?php endif ?>
-
-                            <?php if(settings()->links->vcards_is_enabled): ?>
-                                <a class="dropdown-item" href="<?= url('links?type=vcard') ?>"><i class="fa fa-fw fa-sm fa-id-card mr-2"></i> <?= l('links.menu.vcards') ?></a>
-                            <?php endif ?>
-
-                            <?php if(settings()->links->qr_codes_is_enabled): ?>
-                                <a class="dropdown-item" href="<?= url('qr-codes') ?>"><i class="fa fa-fw fa-sm fa-qrcode mr-2"></i> <?= l('qr_codes.menu') ?></a>
-                            <?php endif ?>
-
-                            <?php if(settings()->tools->is_enabled): ?>
-                                <a class="dropdown-item" href="<?= url('tools') ?>"><i class="fa fa-fw fa-sm fa-tools mr-2"></i> <?= l('tools.menu') ?></a>
-                            <?php endif ?>
-
-                            <div class="dropdown-divider"></div>
-
-                            <?php if(settings()->links->domains_is_enabled): ?>
-                                <a class="dropdown-item" href="<?= url('domains') ?>"><i class="fa fa-fw fa-sm fa-globe mr-2"></i> <?= l('domains.menu') ?></a>
-                            <?php endif ?>
-
-                            <a class="dropdown-item" href="<?= url('pixels') ?>"><i class="fa fa-fw fa-sm fa-adjust mr-2"></i> <?= l('pixels.menu') ?></a>
-
-                            <?php if(settings()->links->biolinks_is_enabled): ?>
-                                <a class="dropdown-item" href="<?= url('data') ?>"><i class="fa fa-fw fa-sm fa-database mr-2"></i> <?= l('data.menu') ?></a>
-
-                                <?php if(\Altum\Plugin::is_active('payment-blocks')): ?>
-                                    <a class="dropdown-item" href="<?= url('payment-processors') ?>"><i class="fa fa-fw fa-sm fa-credit-card mr-2"></i> <?= l('payment_processors.menu') ?></a>
-                                    <a class="dropdown-item" href="<?= url('guests-payments') ?>"><i class="fa fa-fw fa-sm fa-coins mr-2"></i> <?= l('guests_payments.menu') ?></a>
-                                <?php endif ?>
-                            <?php endif ?>
-
-                            <a class="dropdown-item" href="<?= url('projects') ?>"><i class="fa fa-fw fa-sm fa-project-diagram mr-2"></i> <?= l('projects.menu') ?></a>
-
-                            <div class="dropdown-divider"></div>
-
                             <?php if(!\Altum\Teams::is_delegated()): ?>
                                 <a class="dropdown-item" href="<?= url('account') ?>"><i class="fa fa-fw fa-sm fa-wrench mr-2"></i> <?= l('account.menu') ?></a>
 
@@ -108,8 +63,6 @@
                                         <a class="dropdown-item" href="<?= url('referrals') ?>"><i class="fa fa-fw fa-sm fa-wallet mr-2"></i> <?= l('referrals.menu') ?></a>
                                     <?php endif ?>
                                 <?php endif ?>
-
-                                <a class="dropdown-item" href="<?= url('account-api') ?>"><i class="fa fa-fw fa-sm fa-code mr-2"></i> <?= l('account_api.menu') ?></a>
 
                                 <?php if(\Altum\Plugin::is_active('teams')): ?>
                                     <a class="dropdown-item" href="<?= url('teams-system') ?>"><i class="fa fa-fw fa-sm fa-user-shield mr-2"></i> <?= l('teams_system.menu') ?></a>
