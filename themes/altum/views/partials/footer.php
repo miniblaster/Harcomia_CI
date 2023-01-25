@@ -38,13 +38,9 @@
 
             <?php if(count(\Altum\ThemeStyle::$themes) > 1): ?>
                 <div class="mb-2 ml-lg-3">
-                    <button type="button" id="switch_theme_style" class="btn btn-link text-decoration-none p-0" data-toggle="tooltip" title="<?= sprintf(l('global.theme_style'), (\Altum\ThemeStyle::get() == 'light' ? l('global.theme_style_dark') : l('global.theme_style_light'))) ?>" data-title-theme-style-light="<?= sprintf(l('global.theme_style'), l('global.theme_style_light')) ?>" data-title-theme-style-dark="<?= sprintf(l('global.theme_style'), l('global.theme_style_dark')) ?>">
-                        <span data-theme-style="light" class="<?= \Altum\ThemeStyle::get() == 'light' ? null : 'd-none' ?>"><i class="fa fa-fw fa-sm fa-sun mr-1"></i> <?=  l('global.theme_style_light') ?></span>
-                        <span data-theme-style="dark" class="<?= \Altum\ThemeStyle::get() == 'dark' ? null : 'd-none' ?>"><i class="fa fa-fw fa-sm fa-moon mr-1"></i> <?=  l('global.theme_style_dark') ?></span>
-                    </button>
+                    
                 </div>
 
-                <?php include_view(THEME_PATH . 'views/partials/theme_style_js.php') ?>
             <?php endif ?>
         </div>
     </div>

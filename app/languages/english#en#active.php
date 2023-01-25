@@ -500,6 +500,9 @@ return [
     'account.title' => 'Account',
     'account.menu' => 'Account',
 
+    'account.profile' => 'Profile',
+    'account.lock_screen' => 'Lock Screen',
+
     'account.plan.header' => '%s Plan',
     'account.plan.subheader' => 'ends on %s',
     'account.plan.upgrade_plan' => 'Upgrade Plan',

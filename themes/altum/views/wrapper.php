@@ -48,6 +48,7 @@
 
         <!-- <link rel="stylesheet" href="<?= ASSETS_FULL_URL . 'css/custom.css' ?>" /> -->
 
+        
         <?= \Altum\Event::get_content('head') ?>
 
         <?php if(!empty(settings()->custom->head_js)): ?>
