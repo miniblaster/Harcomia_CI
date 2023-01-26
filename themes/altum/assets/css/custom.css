@@ -148,14 +148,30 @@ body[data-theme-style="dark"].bg-white {
 }
 
 .topnav-menu {
+	display: block;;
 	box-shadow: 0 0.25rem 0.75rem rgb(18 38 63 / 8%);
 }
 
-#topnav-menu-content a {
-	cursor: pointer;
+@media (max-width: 992px) {
+	.topnav-menu {
+		/* display: none; */
+	}
 }
 
-#topnav-menu-content a {
+#topnav_menu_content a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#topnav_menu_content a:hover {
+	color: #1c84ee;
+}
+
+body.c_darkmode #topnav_menu_content a:hover {
+	color: white;
+}
+
+#topnav_menu_content a {
 	font-size: 1.1rem;
 	font-weight: 400;
 	color: grey;
@@ -178,13 +194,13 @@ body[data-theme-style="dark"].bg-white {
 
 .dropdown-item {
 	padding: .35rem 1.25rem;
-	color: #2b3940;
+	/* color: #2b3940; */
 }
 
 .navbar-main {
 	min-height: 0 !important;
 	background: var(--white);
-	border-bottom: 2px solid var(--gray-200);
+	/* border-bottom: 2px solid var(--gray-200); */
 }
 
 .navbar-main .navbar-nav > li {
@@ -234,7 +250,7 @@ body[data-theme-style="dark"].bg-white {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-	color: rgba(255,255,255,.85);
+	color: rgba(255,255,255,.85) !important;
 }
 
 .chart-container {
@@ -426,12 +442,20 @@ input[type="radio"]:checked ~ .link-biolink-theme {
 	min-width: 160px;
 }
 
-.grid-row {
-	width: 350px;
+@media (min-width: 992px) {
+	.grid-row {
+		width: 300px;
+	}
+}
+
+.grid-row img {
+	width: 24px;
+	height: 24px;
+	margin: 10px;
 }
 
 body.c_darkmode .dropdown .dropdown-menu>div.grid-row>div:hover {
-	background-color: rgba(255, 255, 255, .2);
+	background-color: rgba(0, 0, 0, 1);
 	transition: all .3s;
 }
 
@@ -449,11 +473,13 @@ body.c_darkmode .dropdown .dropdown-menu>div.grid-row>div:hover {
 }
 
 body.c_darkmode .countries>div:hover {
-	background-color: rgba(255, 255, 255, .2);
+	background-color: rgba(255, 255, 255, .1);
 }
 
-.notifications {
-	width: 320px;
+@media (min-width: 992px) {
+	.notifications {
+		width: 320px;
+	}
 }
 
 .notifications .view-more {
@@ -474,7 +500,7 @@ body.c_darkmode .countries>div:hover {
 }
 
 body.c_darkmode .notify-contents>div:hover {
-	background-color: rgba(255, 255, 255, .2);
+	background-color: rgba(0, 0, 0, 1);
 }
 
 
@@ -885,16 +911,26 @@ body.c_darkmode .notify-contents>div:hover {
 	min-width: fit-content;
 }
 
-.nav-item .badge {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	padding: 2px 5px;
+@media (min-width: 992px) {
+	.nav-item .badge {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		padding: 2px 5px;
+	}
+}
+
+@media (max-width: 992px) {
+	.nav-item .badge {
+		position: absolute;
+		top: 0px;
+		left: 15px;
+		padding: 2px 5px;
+	}
 }
 
 .nav-item .nav-link {
 	position: relative;
-
 }
 
 .account-header-navbar .nav-link {
