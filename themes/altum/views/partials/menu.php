@@ -1,6 +1,6 @@
 <?php defined('ALTUMCODE') || die()?>
 
-<nav id="navbar" class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark mb-6">
+<nav id="navbar" class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="<?=url()?>" data-light-value="<?=settings()->main->logo_light != '' ? \Altum\Uploads::get_full_url('logo_light') . settings()->main->logo_light : settings()->main->title?>" data-light-class="<?=settings()->main->logo_light != '' ? 'img-fluid navbar-logo' : ''?>" data-dark-value="<?=settings()->main->logo_dark != '' ? \Altum\Uploads::get_full_url('logo_dark') . settings()->main->logo_dark : settings()->main->title?>" data-dark-class="<?=settings()->main->logo_dark != '' ? 'img-fluid navbar-logo' : ''?>">
             <?php if (settings()->main->{'logo_' . \Altum\ThemeStyle::get()} != ''): ?>
@@ -40,32 +40,32 @@
                         <a class="nav-link"  data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false"> 
                             <img id="header-lang-img" src="https://www.harcomia.com/dash-v2/assets/images/flags/us.jpg" alt="Header Language" height="16"> 
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right p-2 px-4">
-                            <div class="mb-2">
+                        <div class="dropdown-menu dropdown-menu-right countries">
+                            <div class="p-1 px-4">
                                 <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                     <img src="https://www.harcomia.com/dash-v2/assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12">
                                     <span class="align-middle ml-2">English</span>
                                 </a>
                             </div>
-                            <div class="mb-2">
+                            <div class="p-1 px-4">
                                 <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                     <img src="https://www.harcomia.com/dash-v2/assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12">
                                     <span class="align-middle ml-2">Spanish</span>
                                 </a>
                             </div>
-                            <div class="mb-2">
+                            <div class="p-1 px-4">
                                 <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                     <img src="https://www.harcomia.com/dash-v2/assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12">
                                     <span class="align-middle ml-2">Germany</span>
                                 </a>
                             </div>
-                            <div class="mb-2">
+                            <div class="p-1 px-4">
                                 <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                     <img src="https://www.harcomia.com/dash-v2/assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12">
                                     <span class="align-middle ml-2">Italian</span>
                                 </a>
                             </div>
-                            <div class="">
+                            <div class="p-1 px-4">
                                 <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                     <img src="https://www.harcomia.com/dash-v2/assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12">
                                     <span class="align-middle ml-2">Russian</span>
@@ -91,13 +91,13 @@
                         <a class="nav-link" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false"> 
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid icon-lg"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg> 
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right p-2 px-4">
+                        <div class="dropdown-menu dropdown-menu-right p-2">
                             <div class="d-flex grid-row">
                                 <div class="col-4 p-3">
                                     <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                         <div class="text-center">
                                             <i class="fab fa-github fa-lg m-2"></i>
-                                            <span>GitHub</span>
+                                            <p class="mb-0">GitHub</p>
                                         </div>
                                     </a>
                                 </div>
@@ -105,7 +105,7 @@
                                     <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                         <div class="text-center">
                                             <i class="fab fa-bitbucket fa-lg m-2"></i>
-                                            <span>Bitbucket</span>
+                                            <p class="mb-0">Bitbucket</p>
                                         </div>
                                     </a>
                                 </div>
@@ -113,7 +113,7 @@
                                     <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                         <div class="text-center">
                                             <i class="fab fa-dribbble fa-lg m-2"></i>
-                                            <span>Dribbble</span>
+                                            <p class="mb-0">Dribbble</p>
                                         </div>
                                     </a>
                                 </div>
@@ -123,7 +123,7 @@
                                     <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                         <div class="text-center">
                                             <i class="fab fa-dropbox fa-lg m-2"></i>
-                                            <span>Dropbox</span>
+                                            <p class="mb-0">Dropbox</p>
                                         </div>
                                     </a>
                                 </div>
@@ -131,7 +131,7 @@
                                     <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                         <div class="text-center">
                                             <i class="fab fa-dropbox fa-lg m-2"></i>
-                                            <span>Chimp</span>
+                                            <p class="mb-0">Chimp</p>
                                         </div>
                                     </a>
                                 </div>
@@ -139,7 +139,7 @@
                                     <a class="dropdown-icon-item text-decoration-none" href="javascript:;">
                                         <div class="text-center">
                                             <i class="fab fa-slack fa-lg m-2"></i>
-                                            <span>Slack</span>
+                                            <p class="mb-0">Slack</p>
                                         </div>
                                     </a>
                                 </div>
@@ -192,7 +192,7 @@
                                 </div>
                             </div>
                             <div class="p-2 px-4 text-center border-top">
-                                <a class="text-decoration-none text-center text-primary view-more">
+                                <a class="text-decoration-none text-center view-more">
                                     <i class="fas fa-arrow-alt-circle-right mr-2"></i>
                                     <span>View More..</span>
                                 </a>
@@ -216,20 +216,44 @@
 
                             <?php if (!\Altum\Teams::is_delegated()): ?>
                                 <a class="dropdown-item" href="<?=url('account')?>"><i class="fa fa-fw fa-sm fa-wrench mr-2"></i> <?=l('account.profile')?></a>
+                                <?php if(settings()->links->domains_is_enabled): ?>
+                                    <a class="dropdown-item" href="<?= url('domains') ?>"><i class="fa fa-fw fa-sm fa-globe mr-2"></i> <?= l('domains.menu') ?></a>
+                                <?php endif ?>
 
-                                <a class="dropdown-item" href="<?=url('account-plan')?>"><i class="fa fa-fw fa-sm fa-lock mr-2"></i> <?=l('account.lock_screen')?></a>
+                                <a class="dropdown-item" href="<?= url('pixels') ?>"><i class="fa fa-fw fa-sm fa-adjust mr-2"></i> <?= l('pixels.menu') ?></a>
 
-                                <?php if (settings()->payment->is_enabled): ?>
-                                    <a class="dropdown-item" href="<?=url('account-payments')?>"><i class="fa fa-fw fa-sm fa-dollar-sign mr-2"></i> <?=l('account_payments.menu')?></a>
+                                <?php if(settings()->links->biolinks_is_enabled): ?>
+                                    <a class="dropdown-item" href="<?= url('data') ?>"><i class="fa fa-fw fa-sm fa-database mr-2"></i> <?= l('data.menu') ?></a>
 
-                                    <?php if (\Altum\Plugin::is_active('affiliate') && settings()->affiliate->is_enabled): ?>
-                                        <a class="dropdown-item" href="<?=url('referrals')?>"><i class="fa fa-fw fa-sm fa-wallet mr-2"></i> <?=l('referrals.menu')?></a>
-                                    <?php endif?>
-                                <?php endif?>
+                                    <?php if(\Altum\Plugin::is_active('payment-blocks')): ?>
+                                        <a class="dropdown-item" href="<?= url('payment-processors') ?>"><i class="fa fa-fw fa-sm fa-credit-card mr-2"></i> <?= l('payment_processors.menu') ?></a>
+                                        <a class="dropdown-item" href="<?= url('guests-payments') ?>"><i class="fa fa-fw fa-sm fa-coins mr-2"></i> <?= l('guests_payments.menu') ?></a>
+                                    <?php endif ?>
+                                <?php endif ?>
 
-                                <?php if (\Altum\Plugin::is_active('teams')): ?>
-                                    <a class="dropdown-item" href="<?=url('teams-system')?>"><i class="fa fa-fw fa-sm fa-user-shield mr-2"></i> <?=l('teams_system.menu')?></a>
-                                <?php endif?>
+                                <a class="dropdown-item" href="<?= url('projects') ?>"><i class="fa fa-fw fa-sm fa-project-diagram mr-2"></i> <?= l('projects.menu') ?></a>
+
+                                <div class="dropdown-divider"></div>
+
+                                <?php if(!\Altum\Teams::is_delegated()): ?>
+                                    <a class="dropdown-item" href="<?= url('account') ?>"><i class="fa fa-fw fa-sm fa-wrench mr-2"></i> <?= l('account.menu') ?></a>
+
+                                    <a class="dropdown-item" href="<?= url('account-plan') ?>"><i class="fa fa-fw fa-sm fa-box-open mr-2"></i> <?= l('account_plan.menu') ?></a>
+
+                                    <?php if(settings()->payment->is_enabled): ?>
+                                        <a class="dropdown-item" href="<?= url('account-payments') ?>"><i class="fa fa-fw fa-sm fa-dollar-sign mr-2"></i> <?= l('account_payments.menu') ?></a>
+
+                                        <?php if(\Altum\Plugin::is_active('affiliate') && settings()->affiliate->is_enabled): ?>
+                                            <a class="dropdown-item" href="<?= url('referrals') ?>"><i class="fa fa-fw fa-sm fa-wallet mr-2"></i> <?= l('referrals.menu') ?></a>
+                                        <?php endif ?>
+                                    <?php endif ?>
+
+                                    <a class="dropdown-item" href="<?= url('account-api') ?>"><i class="fa fa-fw fa-sm fa-code mr-2"></i> <?= l('account_api.menu') ?></a>
+
+                                    <?php if(\Altum\Plugin::is_active('teams')): ?>
+                                        <a class="dropdown-item" href="<?= url('teams-system') ?>"><i class="fa fa-fw fa-sm fa-user-shield mr-2"></i> <?= l('teams_system.menu') ?></a>
+                                    <?php endif ?>
+                                <?php endif ?>
                             <?php endif?>
 
                             <div class="dropdown-divider"></div>
@@ -255,6 +279,43 @@
         </div>
     </div>
 </nav>
+
+<nav class="navbar navbar-light navbar-expand-lg topnav-menu mb-4">
+    <div class="collapse navbar-collapse container" id="topnav-menu-content">
+        <ul class="navbar-nav">
+            <a class="dropdown-item pl-0">
+                <i class="fa fa-home mr-2"></i>
+                Dashboard
+            </a>
+
+            <?php if(settings()->links->biolinks_is_enabled): ?>
+                <a class="dropdown-item" href="<?= url('links?type=biolink') ?>"><i class="fa fa-hashtag mr-2"></i> <?= l('links.menu.biolinks') ?></a>
+            <?php endif ?>
+
+            <?php if(settings()->links->shortener_is_enabled): ?>
+                <a class="dropdown-item" href="<?= url('links?type=link') ?>"><i class="fa fa-link mr-2"></i> <?= l('links.menu.links') ?></a>
+            <?php endif ?>
+
+            <?php if(settings()->links->files_is_enabled): ?>
+                <a class="dropdown-item" href="<?= url('links?type=file') ?>"><i class="fa fa-file mr-2"></i> <?= l('links.menu.files') ?></a>
+            <?php endif ?>
+
+            <?php if(settings()->links->vcards_is_enabled): ?>
+                <a class="dropdown-item" href="<?= url('links?type=vcard') ?>"><i class="fa fa-id-card mr-2"></i> <?= l('links.menu.vcards') ?></a>
+            <?php endif ?>
+
+            <?php if(settings()->links->qr_codes_is_enabled): ?>
+                <a class="dropdown-item" href="<?= url('qr-codes') ?>"><i class="fa fa-qrcode mr-2"></i> <?= l('qr_codes.menu') ?></a>
+            <?php endif ?>
+
+            <?php if(settings()->tools->is_enabled): ?>
+                <a class="dropdown-item" href="<?= url('tools') ?>"><i class="fa fa-tools mr-2"></i> <?= l('tools.menu') ?></a>
+            <?php endif ?>
+        </ul>
+
+    </div>
+</nav>
+    
 
 <script>
   let language = "en";
